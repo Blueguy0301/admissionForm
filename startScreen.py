@@ -1,12 +1,15 @@
 from PyQt6.QtGui import QIcon
-
-from PyQt6.QtWidgets import  QMainWindow,  QStackedWidget, QPushButton,QLineEdit,QFrame,QTextEdit,QCheckBox
+from validation import validate
+from textFieldNames import startUI,form1,form2
+from PyQt6.QtWidgets import  QMainWindow,  QStackedWidget, QPushButton,QLineEdit,QFrame,QTextEdit,QCheckBox,QComboBox,QWidget
 from PyQt6 import uic
 resetObject = "reset"
 nextObject = "next"
 backObject = "back"
 nextEnd = "nextEnd"
 formFrame ="formFrame"
+uiData = [startUI,form1,form2]
+uiObjects = []
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -17,7 +20,7 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.stacked_widget) 
         # List of UI file paths
         files = ['./Screens/mainWindow.ui', './Screens/form.ui', './Screens/form2.ui']
-        uiObjects = []
+      
         for filePath in files:
             ui = uic.loadUi(filePath)
             uiObjects.append(ui)
@@ -25,16 +28,14 @@ class MainWindow(QMainWindow):
         for index, ui in enumerate(uiObjects):
             nextButton = ui.findChild(QPushButton, nextObject)
             if nextButton : nextButton.clicked.connect(self.next)
-            print(index)
             reset_button = ui.findChild(QPushButton, resetObject)
-            reset_button.clicked.connect(lambda checked, ui=ui: self.resetForm(checked, ui))
+            reset_button.clicked.connect(lambda checked, ui=ui: self.resetForm(ui))
             backButton = ui.findChild(QPushButton, backObject)
             backButton.clicked.connect(self.back)
-            if index ==len(uiObjects):  
+            if index == len(uiObjects)-1:  
                 nextButton = ui.findChild(QPushButton, nextEnd)
-                nextButton.clicked.connect(self.submit)
-            
-    def resetForm(self, checked, ui):
+                nextButton.clicked.connect(self.retrieveAllData)
+    def resetForm(self, ui):
         frame = ui.findChild(QFrame, formFrame)
         if frame is not None:
             # Iterate over the child widgets of the frame
@@ -56,5 +57,26 @@ class MainWindow(QMainWindow):
         current_index = self.stacked_widget.currentIndex()
         new_index = (current_index - 1) % self.stacked_widget.count()
         self.stacked_widget.setCurrentIndex(new_index)
-    def submit(self,submitFunction) : 
-        pass
+    def retrieveAllData(self):
+        print("retrieve ran")
+        all_data = {}
+        indexes = [0,0]
+        for index,ui in enumerate(uiObjects):
+            print(ui)
+            indexes[0] = index
+            for widget_name in uiData[index]:
+                indexes[1] = index
+                widget = ui.findChild(QWidget, widget_name)
+                if widget:
+                    print(f"{widget_name} found")
+                    if isinstance(widget, QCheckBox):
+                        all_data[widget_name] = widget.isChecked()
+                    elif isinstance(widget, QComboBox):
+                        all_data[widget_name] = widget.currentText()
+                    elif isinstance(widget, QLineEdit):
+                        all_data[widget_name] = widget.text()
+                else : print(f"{widget_name} NOT found")
+
+        print(f"index of ui and widget: {indexes} ")
+        validate(all_data)
+        # print(all_data)

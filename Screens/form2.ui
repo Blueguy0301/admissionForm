@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>980</width>
+    <width>638</width>
     <height>791</height>
    </rect>
   </property>
@@ -177,7 +177,7 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QLineEdit" name="lineEdit_18"/>
+           <widget class="QLineEdit" name="pSchool"/>
           </item>
           <item>
            <widget class="QLabel" name="label_22">
@@ -187,7 +187,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_5"/>
+           <widget class="QLineEdit" name="pGraduate"/>
           </item>
          </layout>
         </widget>
@@ -200,7 +200,7 @@
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QLineEdit" name="lineEdit_20"/>
+        <widget class="QLineEdit" name="pAddress"/>
        </item>
        <item row="3" column="0">
         <widget class="QLabel" name="label_24">
@@ -225,7 +225,7 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QLineEdit" name="lineEdit_22"/>
+           <widget class="QLineEdit" name="sSchool"/>
           </item>
           <item>
            <widget class="QLabel" name="label_26">
@@ -235,7 +235,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_23"/>
+           <widget class="QLineEdit" name="sGraduate"/>
           </item>
           <item>
            <widget class="QLabel" name="label_30">
@@ -245,7 +245,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_27"/>
+           <widget class="QLineEdit" name="sStrand"/>
           </item>
          </layout>
         </widget>
@@ -258,7 +258,7 @@
         </widget>
        </item>
        <item row="4" column="1">
-        <widget class="QLineEdit" name="lineEdit_21"/>
+        <widget class="QLineEdit" name="sAddress"/>
        </item>
        <item row="5" column="0">
         <widget class="QLabel" name="label_27">
@@ -283,7 +283,7 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QLineEdit" name="lineEdit_25"/>
+           <widget class="QLineEdit" name="tSchool"/>
           </item>
           <item>
            <widget class="QLabel" name="label_29">
@@ -293,10 +293,10 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_26"/>
+           <widget class="QLineEdit" name="tGraduate"/>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_2">
+           <widget class="QCheckBox" name="tNA">
             <property name="text">
              <string>N/A</string>
             </property>
@@ -313,7 +313,7 @@
         </widget>
        </item>
        <item row="6" column="1">
-        <widget class="QLineEdit" name="lineEdit_24"/>
+        <widget class="QLineEdit" name="tAddress"/>
        </item>
        <item row="7" column="0">
         <widget class="QLabel" name="label_32">
@@ -338,20 +338,10 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QLineEdit" name="lineEdit_28"/>
+           <widget class="QLineEdit" name="vSchool"/>
           </item>
           <item>
-           <widget class="QLabel" name="label_33">
-            <property name="text">
-             <string>Year Graduated</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="lineEdit_29"/>
-          </item>
-          <item>
-           <widget class="QCheckBox" name="checkBox">
+           <widget class="QCheckBox" name="vNA">
             <property name="text">
              <string>N/A</string>
             </property>
@@ -368,7 +358,7 @@
         </widget>
        </item>
        <item row="8" column="1">
-        <widget class="QLineEdit" name="lineEdit_30"/>
+        <widget class="QLineEdit" name="vAddress"/>
        </item>
        <item row="9" column="0">
         <widget class="QLabel" name="label_34">
@@ -403,7 +393,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_33"/>
+              <widget class="QLineEdit" name="secondCourse"/>
              </item>
              <item>
               <widget class="QLabel" name="label_36">
@@ -413,7 +403,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_34"/>
+              <widget class="QLineEdit" name="firstMajor"/>
              </item>
             </layout>
            </widget>
@@ -436,12 +426,12 @@
              <item>
               <widget class="QLabel" name="label_38">
                <property name="text">
-                <string>1st Choice</string>
+                <string>2nd Choice</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_31"/>
+              <widget class="QLineEdit" name="firstCourse"/>
              </item>
              <item>
               <widget class="QLabel" name="label_35">
@@ -451,7 +441,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_32"/>
+              <widget class="QLineEdit" name="secondMajor"/>
              </item>
             </layout>
            </widget>

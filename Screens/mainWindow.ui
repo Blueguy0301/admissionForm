@@ -154,7 +154,7 @@
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_4">
           <item>
-           <widget class="QCheckBox" name="checkBox_2">
+           <widget class="QCheckBox" name="interview">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -167,49 +167,49 @@
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_3">
+           <widget class="QCheckBox" name="psa">
             <property name="text">
              <string>Photocopy of NSO/PSA Birth Certificate</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_6">
+           <widget class="QCheckBox" name="f138">
             <property name="text">
              <string>Form 138 (original)</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_4">
+           <widget class="QCheckBox" name="f137">
             <property name="text">
              <string>Form 137/SF10</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_7">
+           <widget class="QCheckBox" name="gmc">
             <property name="text">
              <string>Good Moral Crtificate</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_8">
+           <widget class="QCheckBox" name="idPic">
             <property name="text">
              <string>2x2 ID Picture (4pcs)</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox">
+           <widget class="QCheckBox" name="lbe">
             <property name="text">
              <string>Long Brown Envelope (2pcs)</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_5">
+           <widget class="QCheckBox" name="lpe">
             <property name="text">
              <string>Long Plastic Envelope (2pcs)</string>
             </property>
@@ -225,7 +225,7 @@
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_3">
           <item>
-           <widget class="QCheckBox" name="checkBox_18">
+           <widget class="QCheckBox" name="interviewRight">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -238,49 +238,49 @@
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_21">
+           <widget class="QCheckBox" name="psaRight">
             <property name="text">
              <string>Photocopy of NSO/PSA Birth Certificate</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_22">
+           <widget class="QCheckBox" name="f138Right">
             <property name="text">
              <string>Form 138 (original)</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_23">
+           <widget class="QCheckBox" name="f137Right">
             <property name="text">
              <string>Form 137/SF10</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_17">
+           <widget class="QCheckBox" name="gmcRight">
             <property name="text">
              <string>Good Moral Crtificate</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_24">
+           <widget class="QCheckBox" name="idPicRight">
             <property name="text">
              <string>2x2 ID Picture (4pcs)</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_19">
+           <widget class="QCheckBox" name="lbeRight">
             <property name="text">
              <string>Long Brown Envelope (2pcs)</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_20">
+           <widget class="QCheckBox" name="lpeRight">
             <property name="text">
              <string>Long Plastic Envelope (2pcs)</string>
             </property>

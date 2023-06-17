@@ -226,14 +226,14 @@
            </spacer>
           </item>
           <item>
-           <widget class="QLabel" name="dateApplicationLabel">
+           <widget class="QLabel" name="label_13">
             <property name="text">
              <string>Date of Application</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="month">
+           <widget class="QComboBox" name="daMonth">
             <property name="minimumSize">
              <size>
               <width>100</width>
@@ -255,10 +255,70 @@
             <property name="placeholderText">
              <string>Month</string>
             </property>
+            <item>
+             <property name="text">
+              <string>January</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Febuary</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>March</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>April</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>May</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>June</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>July</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>August</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>September</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>October</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>November</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>December</string>
+             </property>
+            </item>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="day">
+           <widget class="QLineEdit" name="daDay">
             <property name="maximumSize">
              <size>
               <width>50</width>
@@ -271,7 +331,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="year">
+           <widget class="QLineEdit" name="daYear">
             <property name="maximumSize">
              <size>
               <width>75</width>
@@ -345,14 +405,14 @@
         </widget>
        </item>
        <item row="3" column="0">
-        <widget class="QLabel" name="address">
+        <widget class="QLabel" name="label_12">
          <property name="text">
           <string>Complete Address</string>
          </property>
         </widget>
        </item>
        <item row="3" column="1">
-        <widget class="QLineEdit" name="lineEdit_35">
+        <widget class="QLineEdit" name="address">
          <property name="text">
           <string/>
          </property>
@@ -366,7 +426,7 @@
         </widget>
        </item>
        <item row="4" column="1">
-        <widget class="QFrame" name="status">
+        <widget class="QFrame" name="frame_2">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -420,7 +480,7 @@
               <number>0</number>
              </property>
              <item>
-              <widget class="QComboBox" name="month_2">
+              <widget class="QComboBox" name="dobMonth">
                <property name="minimumSize">
                 <size>
                  <width>100</width>
@@ -442,10 +502,70 @@
                <property name="placeholderText">
                 <string>Month</string>
                </property>
+               <item>
+                <property name="text">
+                 <string>January</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>February</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>March</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>April</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>May</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>June</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>July</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>August</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>September</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>October</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>November</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>December</string>
+                </property>
+               </item>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="day_2">
+              <widget class="QLineEdit" name="dobDay">
                <property name="maximumSize">
                 <size>
                  <width>50</width>
@@ -458,7 +578,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="year_2">
+              <widget class="QLineEdit" name="dobYear">
                <property name="maximumSize">
                 <size>
                  <width>75</width>
@@ -490,7 +610,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit">
+           <widget class="QLineEdit" name="age">
             <property name="maximumSize">
              <size>
               <width>50</width>
@@ -510,13 +630,26 @@
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox">
+           <widget class="QComboBox" name="sex">
             <property name="maximumSize">
              <size>
               <width>50</width>
               <height>16777215</height>
              </size>
             </property>
+            <property name="placeholderText">
+             <string/>
+            </property>
+            <item>
+             <property name="text">
+              <string>M</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>F</string>
+             </property>
+            </item>
            </widget>
           </item>
           <item>
@@ -527,7 +660,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_2">
+           <widget class="QLineEdit" name="religion">
             <property name="text">
              <string/>
             </property>
@@ -566,7 +699,7 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QLineEdit" name="lineEdit_6"/>
+           <widget class="QLineEdit" name="contact"/>
           </item>
           <item>
            <widget class="QLabel" name="label_10">
@@ -576,7 +709,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_7"/>
+           <widget class="QLineEdit" name="email"/>
           </item>
          </layout>
         </widget>
@@ -604,7 +737,7 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QLineEdit" name="lineEdit_12"/>
+           <widget class="QLineEdit" name="mother"/>
           </item>
           <item>
            <widget class="QLabel" name="label_14">
@@ -614,7 +747,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_13"/>
+           <widget class="QLineEdit" name="mOccupation"/>
           </item>
          </layout>
         </widget>
@@ -642,7 +775,7 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QLineEdit" name="lineEdit_14"/>
+           <widget class="QLineEdit" name="father"/>
           </item>
           <item>
            <widget class="QLabel" name="label_16">
@@ -652,7 +785,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_15"/>
+           <widget class="QLineEdit" name="fOccupation"/>
           </item>
          </layout>
         </widget>
@@ -672,7 +805,7 @@
         </widget>
        </item>
        <item row="10" column="1">
-        <widget class="QLineEdit" name="lineEdit_36"/>
+        <widget class="QLineEdit" name="gAddress"/>
        </item>
        <item row="9" column="1">
         <widget class="QFrame" name="frame_5">
@@ -690,7 +823,7 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QLineEdit" name="lineEdit_16">
+           <widget class="QLineEdit" name="gName">
             <property name="text">
              <string/>
             </property>
@@ -704,7 +837,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_17"/>
+           <widget class="QLineEdit" name="gContact"/>
           </item>
           <item>
            <widget class="QLabel" name="label_20">
@@ -714,7 +847,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_19"/>
+           <widget class="QLineEdit" name="gRelationship"/>
           </item>
          </layout>
         </widget>
@@ -738,7 +871,7 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QLineEdit" name="lineEdit_4"/>
+           <widget class="QLineEdit" name="pob"/>
           </item>
           <item>
            <widget class="QLabel" name="label_6">
@@ -748,7 +881,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_3"/>
+           <widget class="QLineEdit" name="citizenship"/>
           </item>
           <item>
            <widget class="QLabel" name="label_8">
@@ -758,13 +891,36 @@
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox_2">
+           <widget class="QComboBox" name="status">
             <property name="minimumSize">
              <size>
               <width>150</width>
               <height>0</height>
              </size>
             </property>
+            <property name="placeholderText">
+             <string>Select</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Single</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Married</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Widowed</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Divorced</string>
+             </property>
+            </item>
            </widget>
           </item>
          </layout>
