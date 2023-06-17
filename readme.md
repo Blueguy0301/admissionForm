@@ -78,4 +78,4 @@ print(sex) #prints M
 
 ## Adding data to the database.
 
-mas lalo ko ng pinadali yung buhay niyo na ISANG file na lang ang i eedit niyo (baka kung ano ano pa buksan niyo), to add the data to the data base, just open the `validation.py` and ENTER YOUR CODE INSIDE THE ONE AND ONLY FUNCTION/METHOD na meron ang file nayon. sobrang dali diba?
+ISANG file na lang ang i eedit niyo. to add the data to the data base, just open the `validation.py` and ENTER YOUR CODE INSIDE THE ONE AND ONLY FUNCTION/METHOD na meron ang file nayon.
