@@ -52,23 +52,19 @@ class MainWindow(QMainWindow):
         new_index = (current_index + 1) % self.stacked_widget.count()
         self.stacked_widget.setCurrentIndex(new_index)
     def back(self):
-        print('back pressed')
         # Change the current index of the QStackedWidget
         current_index = self.stacked_widget.currentIndex()
         new_index = (current_index - 1) % self.stacked_widget.count()
         self.stacked_widget.setCurrentIndex(new_index)
     def retrieveAllData(self):
-        print("retrieve ran")
         all_data = {}
         indexes = [0,0]
         for index,ui in enumerate(uiObjects):
-            print(ui)
             indexes[0] = index
             for widget_name in uiData[index]:
                 indexes[1] = index
                 widget = ui.findChild(QWidget, widget_name)
                 if widget:
-                    print(f"{widget_name} found")
                     if isinstance(widget, QCheckBox):
                         all_data[widget_name] = widget.isChecked()
                     elif isinstance(widget, QComboBox):
@@ -77,6 +73,5 @@ class MainWindow(QMainWindow):
                         all_data[widget_name] = widget.text()
                 else : print(f"{widget_name} NOT found")
 
-        print(f"index of ui and widget: {indexes} ")
         validate(all_data)
         # print(all_data)

@@ -2,6 +2,8 @@ from typing import List, Optional,Union
 import warnings
 import mysql
 import mysql.connector
+from textFieldNames import startUI,form1,form2
+columns= [*startUI,*form1,*form2]
 """
     Class responsible for database connection, disconnection and returning data from the database
 """
@@ -135,15 +137,22 @@ class db:
             raise Exception("Database connected twice check for double calls")
         self.db = mysql.connector.connect(host=host, user=username, password=password)
         cursor =self.db.cursor()
-        cursor.execute(f"DROP DATABASE IF EXISTS testdatabase")
-        cursor.execute(f"CREATE DATABASE testdatabase")
+        cursor.execute(f"DROP DATABASE IF EXISTS collegeform")
+        cursor.execute(f"CREATE DATABASE collegeform")
         cursor.close()
         self.db.close()
         print("Database created successfully")
+        self.db = mysql.connector.connect(host=host, user=username, password=password, database="collegeform")
+        cursor = self.db.cursor()
 
-        self.db = mysql.connector.connect(host=host, user=username, password=password,database="testdatabase")
-        cursor =self.db.cursor()
-        cursor.execute(f"CREATE TABLE tableTest (field1 varchar(30) NOT NULL, field2 varchar(30) NOT NULL)")
+        # Join the column definitions into a comma-separated string with proper formatting
+        columns_str = ', '.join([f'{column} VARCHAR(64)' for column in columns])
+
+        # Create the CREATE TABLE query
+        query = f"CREATE TABLE admissionsystem ({columns_str})"
+
+        # Execute the CREATE TABLE query
+        cursor.execute(query)
         print("Table created successfully")
        # have this always at the last part of the code
         cursor.close()
